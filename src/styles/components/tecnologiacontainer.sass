@@ -1,0 +1,76 @@
+@use '../variable'
+@use '../mixins'
+
+.Tecnologias
+  margin: 3rem 0
+  text-align: center
+
+  h2
+    font-size: 2rem
+    margin-bottom: 2rem
+    color: variable.$text-color
+    position: relative
+    display: inline-block
+
+    &::after
+      @include mixins.gradient-border()
+      display: block
+      margin: .5rem auto 0 auto
+      border-radius: 2px
+
+  .tecnologias-grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    gap: 2rem
+
+  .tecnologia-card
+    background-color: variable.$bg-color-secondary
+    border-radius: variable.$card-border-radius
+    padding: 2rem
+    text-align: center
+    transition: all .3s ease-in-out
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2)
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 1rem
+    cursor: pointer
+
+    svg
+      font-size: 3rem
+      margin-bottom: 1rem
+
+    h3
+      color: variable.$text-color
+      margin-bottom: .5rem
+
+    p
+      font-size: .9rem
+      color: variable.$text-color-secondary
+      line-height: 1.4
+
+    &:hover
+      transform: translateY(-6px) scale(1.02)
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4)
+
+  /* === Cores individuais === */
+  #html svg
+    color: #e44d26
+
+  #CSS svg
+    color: #264de4
+
+  #js svg
+    color: #f7df1e
+
+  #node svg
+    color: #68a063
+
+  #react svg
+    color: #61dafb
+
+  #mysql svg
+    color: #00758f
+
+  #wordpress svg
+    color: #21759b
