@@ -1,14 +1,24 @@
-
-
 const ProjetosContainer = () => {
   return (
     <section className="projects-container">
-        <h2>Projetos</h2>
+      <h2>Projetos</h2>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum placeat est cupiditate cumque qui, fuga rem inventore fugit, iste, impedit necessitatibus. Quaerat repellendus cumque tenetur veritatis placeat amet incidunt ex!</p>
+      <p>
+        Aqui você encontra alguns dos meus projetos mais legais 🎯. 
+        São trabalhos que desenvolvi em freelas, estudos e também em 
+        pesquisas acadêmicas. O foco é sempre criar algo 
+        <strong> funcional, rápido e responsivo</strong>, aplicando 
+        tudo o que venho aprendendo no mundo do desenvolvimento web.
+      </p>
 
-        <a href="#" className="btn">ver Projetos</a>
-
+      <a 
+        href="https://joaovitor2074.github.io/Portfolio/" 
+        className="btn" 
+        target="_blank" 
+        rel="noreferrer"
+      >
+        Ver Projetos
+      </a>
     </section>
   )
 }

@@ -1,7 +1,9 @@
-import Avatar from '../img/avatar.jpg'
+import Avatar from '../img/avata.jpg'
 import '../styles/components/sidebar.sass'
 import InformationContainer from './InformationContainer'
 import SocialNetworks from './SocialNetworks'
+
+import cv from "../docs/curriculo.pdf"
 
 const SideBar = () => {
   return (
@@ -16,7 +18,7 @@ const SideBar = () => {
       <InformationContainer/>
 
 
-      <a href="#" className="btn">Download currículo</a>
+      <a href={cv} className="btn" target='_blank'>Download currículo</a>
     </aside>
   )
 }
